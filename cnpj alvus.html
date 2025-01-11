@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copiar Texto</title>
+</head>
+<body>
+  <a href="#" onclick="copiarTexto()">Clique aqui para copiar o texto</a>
+
+  <script>
+    function copiarTexto() {
+      const texto = "58.027.452/0001-47";
+      navigator.clipboard.writeText(texto).then(() => {
+        alert("58.027.452/0001-47");
+      }).catch(err => {
+        alert("Erro ao copiar o texto: " + err);
+      });
+    }
+  </script>
+</body>
+</html>
